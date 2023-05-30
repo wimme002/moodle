@@ -176,7 +176,6 @@ class scores extends resource_base {
                 !isset($score->timestamp) ||
                 !isset($score->gradingProgress) ||
                 !isset($score->activityProgress) ||
-                !isset($score->timestamp) ||
                 isset($score->timestamp) && !gradebookservices::validate_iso8601_date($score->timestamp) ||
                 (isset($score->scoreGiven) && !is_numeric($score->scoreGiven)) ||
                 (isset($score->scoreGiven) && !isset($score->scoreMaximum)) ||
